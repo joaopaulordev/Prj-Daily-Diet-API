@@ -1,0 +1,302 @@
+{
+	"info": {
+		"_postman_id": "568da631-3954-484d-9513-ca3344d1476e",
+		"name": "02-PRJ-DAILY-DIET-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44993554"
+	},
+	"item": [
+		{
+			"name": "User Logout",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"loro\",\r\n    \"password\": \"1234\"\r\n}"
+				},
+				"url": {
+					"raw": "{{02-API}}/logout",
+					"host": [
+						"{{02-API}}"
+					],
+					"path": [
+						"logout"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Read by Id_user",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"loro\",\r\n    \"password\": \"1234\"\r\n}"
+				},
+				"url": {
+					"raw": "{{02-API}}/user/1",
+					"host": [
+						"{{02-API}}"
+					],
+					"path": [
+						"user",
+						"1"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"admin\",\r\n    \"password\": \"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{02-API}}/login",
+					"host": [
+						"{{02-API}}"
+					],
+					"path": [
+						"login"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Create",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"loro\",\r\n    \"password\": \"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{02-API}}/user",
+					"host": [
+						"{{02-API}}"
+					],
+					"path": [
+						"user"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Meal Create",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"salada\",\r\n    \"descricao\": \"verde.\",\r\n    \"datahora\": \"2025-04-13T12:30:00\",\r\n    \"isDiet\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{02-API}}/refeicao",
+					"host": [
+						"{{02-API}}"
+					],
+					"path": [
+						"refeicao"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Meal Read",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{02-API}}/refeicao/4",
+					"host": [
+						"{{02-API}}"
+					],
+					"path": [
+						"refeicao",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Meal Delete",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{02-API}}/refeicao/1",
+					"host": [
+						"{{02-API}}"
+					],
+					"path": [
+						"refeicao",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Meal Read by user id",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{02-API}}/refeicao/usuario/1",
+					"host": [
+						"{{02-API}}"
+					],
+					"path": [
+						"refeicao",
+						"usuario",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Meal Update",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"datahora\": \"2025-04-13T12:30:00\",\r\n    \"descricao\": \"verde.\",\r\n    \"id_usuario\": 1,\r\n    \"isDiet\": true,\r\n    \"nome\": \"salada\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{02-API}}/refeicao/4",
+					"host": [
+						"{{02-API}}"
+					],
+					"path": [
+						"refeicao",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Meal Deletar",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{02-API}}/refeicao/5",
+					"host": [
+						"{{02-API}}"
+					],
+					"path": [
+						"refeicao",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
